@@ -53,3 +53,11 @@
    border: 1.5px solid white;
     cursor: pointer;
 }
+
+.hero-connect:hover{
+    border: 1.5px solid white;
+}
+
+.hero-resume:hover{
+    border-color: #B415FF;
+}
