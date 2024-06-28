@@ -73,7 +73,16 @@ const Navbar = () => {
           {menu === "contact" && <img src={underline} alt="underline" />}
         </li>
       </ul>
-      <div className="nav-contact">Connect</div>
+      <div className="nav-contact"><ScrollLink
+            className="anchor-link"
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={50}
+            onClick={() => setMenu("contact")}
+          >
+            {/* <p>Contact</p> */}
+          Connect  </ScrollLink></div>
     </div>
   );
 };
