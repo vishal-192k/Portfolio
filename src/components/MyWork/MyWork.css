@@ -53,9 +53,33 @@
 }
   
   /* Media query for smaller screens */
-@media (max-width: 600px) {
-    .mywork-container {
+@media (max-width: 768px) {
+     .mywork-container {
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller minimum size for images */
+
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .mywork-container img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .mywork{
+        gap: 70px;
+        align-items: start;
+        margin: 40px 8px;
+        /* margin-left: 10px; */
+    }
+    .mywork-title h1{
+        font-size: 47px;
+    }
+    .mywork-title img{
+        width: 100px;
+        /* right: -20px;     */
     }
 }
   
