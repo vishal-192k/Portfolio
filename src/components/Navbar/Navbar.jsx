@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/nav_underline.svg";
 import underline from "../../assets/nav_underline.svg";
 import { Link as ScrollLink, Element as ScrollElement } from "react-scroll";
 import menu_open from '../../assets/menu_open.svg'
@@ -20,8 +20,11 @@ const Navbar = () => {
   return (
    
     <div className="navbar">
+      <div className="logoV">
+      <h1>Vishal</h1>
       <img src={logo} alt="Logo" />
-      <img src={menu_open} alt="" 
+      </div>
+      <img  src={menu_open} alt="" 
      onClick={openMenu} className="nav-mob-open"/>
 
       <ul ref={menuRef} className="nav-menu">

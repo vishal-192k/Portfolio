@@ -5,10 +5,25 @@
     margin:20px 170px;
 
 }
-.navbar>img{
-    width: 50px;
-    height: 50px;
-}
+ .logoV {
+    position: relative;
+} 
+ .logoV h1{
+    
+    font-size: 30px;
+    background: linear-gradient(264deg, #DF8908 -5.09% , #B415FF 106.28%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+ }
+ .logoV img{
+    position: absolute;
+    width: 58px;
+    right: -15px;
+    bottom: 0;
+    z-index: -1;
+ }
+
 .nav-menu {
     list-style: none;
     font-size: 20px;
@@ -52,6 +67,10 @@
     }
     .nav-contact{
         display: none;
+    }
+    .navbar img:nth-of-type(2) {
+        width: 50px;
+        height: 50px;
     }
     .nav-mob-open{
         display: block;
